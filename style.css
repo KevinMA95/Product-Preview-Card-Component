@@ -1,0 +1,138 @@
+:root {
+
+    --main-clr-cyan: hsl(158, 36%, 37%);
+    --main-clr-bg: hsl(30, 38%, 92%);
+    --clr-txt-head: hsl(212, 21%, 14%);
+
+    --main-clr-txt: hsl(228, 12%, 48%);
+    --main-clr-card-bg: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: var(--main-clr-bg);
+    height: 100vh;
+    justify-content: center;
+    font-size: 0.875rem;
+    align-items: center;
+    
+}
+
+.img-desktop {
+    display: none;
+}
+
+
+.img-mobile {
+    display: block;
+    max-width: 100%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.details-container {
+    background-color: var(--main-clr-card-bg);
+    padding: 1rem 2rem;
+    line-height: 1.8rem;
+    border-radius: 0 0 .5rem .5rem;
+
+}
+
+#main-container {
+    max-width: 90%;
+    max-height: 90%;
+    margin: 1rem;
+}
+
+.light {
+    color: var(--main-clr-txt);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.top {
+    letter-spacing: .3rem;
+    font-weight: 700;
+    font-size: .6rem;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    color: var(--clr-txt-head);
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: .825rem;
+}
+
+.green {
+    color: var(--main-clr-cyan);
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.price-container {
+    display: flex;
+}
+
+.price {
+    font-size: .75rem;
+    padding-left: 1rem;
+    text-decoration: line-through;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--main-clr-cyan);
+    color: var(--main-clr-card-bg);
+    border-radius: .4rem;
+    margin: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    padding: .3rem 0;
+}
+
+.btn-container span {
+    padding-left: .5rem;
+}
+
+.btn-container:hover {
+    cursor: pointer;
+    background-color: var(--clr-txt-head);
+}
+
+@media (min-width: 37.5rem) {
+    #main-container {
+        display: flex;
+        max-width: 50%;
+        max-height: 60%;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop{
+        display: block;
+        max-width: 50%;
+        border-radius: .5rem 0 0 .5rem;
+    }
+
+
+    .details-container {
+        border-radius: 0 .5rem .5rem 0;
+    }
+}
+
+
+
+
+
